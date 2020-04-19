@@ -12,3 +12,4 @@
 (lat? '(a))
 (lat? '(a b c d))
 (lat? '(a (b)))
+(lat? '(bacon (and eggs)))

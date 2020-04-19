@@ -7,7 +7,7 @@
     (cond
       ((null? l ) #f)
       ((eq? (car l) a) #t)
-      ((not (atom? (car l)) )
+      ((not (atom? (car l)))
        (cond
          ((member? a (car l))#t)   
          (else(member? a (cdr l)))
@@ -17,3 +17,6 @@
 (member? 'a '())
 (member? 'b '((b) (c b)))
 (member? 'a '(a a))
+(member? 'meat '(potatoes and meat gravy))
+(member? 'liver '(bagels and lox))
+(member? 'b '(a))
